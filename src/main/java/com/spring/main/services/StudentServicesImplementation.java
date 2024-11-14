@@ -19,4 +19,10 @@ public class StudentServicesImplementation implements StudentServices{
 		return studentRepository.findAll();
 	}
 
+	@Override
+	public void addStudent(Student student) {
+		// TODO Auto-generated method stub
+		this.studentRepository.save(student);
+		}
+
 }

@@ -32,6 +32,10 @@ public class Student {
 		this.location = location;
 	}
 
+	public Student() {
+		// TODO Auto-generated constructor stub
+	}
+
 	public long getStudentID() {
 		return studentID;
 	}
