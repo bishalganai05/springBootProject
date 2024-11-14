@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns:th = "http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Student Management System</title>
+
+<link rel="stylesheet"
+ href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+ integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+ crossorigin="anonymous">
+</head>
+<body>
+	<div align="center" class="container my-2">
+		<h1>List Of Students</h1>
+		<table border="1" class="table table-striped table-responsive-md">
+			<thead>
+				<tr>
+					<th>Student Name</th>
+					<th>Student Email Address</th>
+					<th>Student Address</th>
+				</tr>
+			</thead>
+			<tbody>
+			<tr th:each="student:${listStudents}">
+				<td th:text="${student.studentName}"></td>
+				<td th:text="${student.emailID}"></td>
+				<td th:text="${student.location}"></td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
