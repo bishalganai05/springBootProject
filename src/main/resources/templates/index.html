@@ -26,6 +26,7 @@
 				<td th:text="${student.studentName}"></td>
 				<td th:text="${student.emailID}"></td>
 				<td th:text="${student.location}"></td>
+				<td><a th:href="@{/showFormForUpdate/{id}(id=${student.id})}" class="btn btn-primary">Update</a></td>
 			</tr>
 			</tbody>
 		</table>
